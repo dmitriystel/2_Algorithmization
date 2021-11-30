@@ -32,7 +32,7 @@ public class Solution66 {
 
 		System.out.print("new array: ");
 		
-		int [] twins = twinPrime(a, n);
+		int [] twins = FindTwinPrime(a, n);
 								
 		for (int elem : twins) {
 			System.out.print(elem + " ");
@@ -50,7 +50,7 @@ public class Solution66 {
 			}					
 	  }	
 	
-	private static int [] twinPrime(int[] a, int n) {
+	private static int [] FindTwinPrime(int[] a, int n) {
 				
 		int numOfElem = 0;	
 		int numOfElem2 = 0;
@@ -134,8 +134,7 @@ public class Solution66 {
 					res[elem] = twinPrimeNumber[x];
 					elem++;
 				}
-			}
-						
+			}						
 		}	
 		
 		return res;

@@ -19,24 +19,24 @@ public class Solution64 {
 		System.out.println("number one is: " + n);
 		System.out.println("number two is: " + m);
 		
-		if (numOfdigits(n, m) > 0) {
-			if (numOfdigits(n, m) == n) {
+		if (calculateNumOfDigits(n, m) > 0) {
+			if (calculateNumOfDigits(n, m) == n) {
 				System.out.println(n + " contains more digits");
-			} else if (numOfdigits(n, m) == m) {
+			} else if (calculateNumOfDigits(n, m) == m) {
 				System.out.println(m + " contains more digits");
 			}
-		} else if (numOfdigits(n, m) == 0) {
+		} else if (calculateNumOfDigits(n, m) == 0) {
 			System.out.println("number contains the same number of digits");
 		}		
 	}
 	
-	private static int numOfdigits(int n, int m) {
+	private static int calculateNumOfDigits(int n, int m) {
 		
 		int num1 = n; 
 		int num2 = m;		
 		int count1 = 0; 
 		int count2 = 0;
-		int res = 0; 
+		int result = 0; 
 				
 		while (num1 > 0) {
 			num1 /= 10;
@@ -49,13 +49,13 @@ public class Solution64 {
 		}
 		
 		if (count1 > count2) {
-			res = n; 
+			result = n; 
 		} else if (count1 < count2) {
-			res = m; 
+			result = m; 
 		} else if (count1 == count2) {
-			res = 0;
+			result = 0;
 		}		
-	return res; 	
+	return result; 	
 	} 
 }
 

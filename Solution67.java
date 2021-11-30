@@ -19,14 +19,14 @@ public class Solution67 {
 		
 		System.out.println("Armstrong numbers from 1 to " + k + ":");
 		
-		int [] arr = armstrongNum(k);
+		int [] arr = FindArmstrongNum(k);
 		
 		for (int elem : arr) {
 			System.out.print(elem + " ");	
 		}
 	}
 
-	private static int [] armstrongNum(int k) {
+	private static int [] FindArmstrongNum(int k) {
 
 		int lastDigit = 0; 
 		int lastDigit1 = 0;

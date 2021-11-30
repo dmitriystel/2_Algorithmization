@@ -4,7 +4,8 @@ package by.introduction.first.leaner1.main;
 
    Декомпозиция с использованием методов (подпрограммы)
 
-15. Найти все натуральные n-значные числа, цифры в которых образуют строго
+15. Найти все натуральные n-значные числа, цифры в которых образуют строго возрастающую последовательность
+    (например, 1234, 5789). Для решения задачи использовать декомпозицию.
 */
 public class Solution68 {
 
@@ -12,10 +13,10 @@ public class Solution68 {
 
 		int [] a = {1234, 5642, 6789, 3221, 2589, 4567, 3232, 1568, 1479, 3258, 4891, 2459, 6541};
 
-		 System.out.println(increase(a)); 
+		 System.out.println(findIncreasingSequence(a)); 
 	}
 	
-	private static String increase(int [] a) {
+	private static String findIncreasingSequence(int [] a) {
 		
 		String s = "";
 				

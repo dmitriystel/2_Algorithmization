@@ -25,23 +25,25 @@ public class Solution62 {
 		System.out.println("z: " + z);
 		System.out.println("t: " + t);
 				
-		System.out.println("s: " + s(x, y, z, t));				
+		System.out.println("s: " + calculateArea(x, y, z, t));				
 	}
 
-	private static double s(double x, double y, double z, double t) {
+	private static double calculateArea(double x, double y, double z, double t) {
 		
 		double s1 = 0; 
 		double s2 = 0; 
-		double res = 0; 
+		double result = 0; 
 		double c = 0; 
 				
 		s1 = (double) 1/2 *  x * y;
 		
-		c = Math.sqrt( Math.pow(x, 2) + Math.pow(y, 2) ); 		
-		s2 = (double) 1/4 * Math.sqrt(  (4 * Math.pow(z, 2) * Math.pow(t, 2)) - Math.sqrt( Math.pow(z,2)) + Math.pow(t, 2) + Math.pow(c, 2)); 
+		c = Math.sqrt( Math.pow(x, 2) + Math.pow(y, 2) ); 	
 		
-		res = s1 + s2;
+		s2 = (double) 1/4 * Math.sqrt(  (4 * Math.pow(z, 2) * Math.pow(t, 2)) - Math.sqrt( Math.pow(z,2)) 
+				+ Math.pow(t, 2) + Math.pow(c, 2)); 
+		
+		result = s1 + s2;
 				
-		return res;
+		return result;
 	}	
 }

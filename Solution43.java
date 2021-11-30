@@ -25,13 +25,13 @@ public class Solution43 {
 		int count = 0;
 		
 		for (int y = 0; y < matrix[0].length; y++) { 
-				 while(count != y + 1) {
+				 while(count != y) {
 				 	count = 0; 
 					for (int x = 0; x < matrix.length; x++) {					
 						matrix[x][y] = (int) (Math.random() * 2);
 						if (matrix[x][y] == 1) {
 							count++;
-							if (count == y + 1) {
+							if (count == y) {
 								break;
 							}
 					}

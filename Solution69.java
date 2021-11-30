@@ -14,15 +14,15 @@ public class Solution69 {
 
 		int [] a = {1235, 1234, 7953, 2587, 7539, 2468, 1753, 8462, 7733, 8648, 1953, 8842, 9371};
 		
-		int res = sumOfNumContainOddNum(a);
+		int res = colculateSumOfNumContainOddNum(a);
 				
 		System.out.println("sum of numbers containing odd digits: " + res);
 		
-		System.out.println("the number of even digits in the found sum: " + numOfEvenDigits(res));
+		System.out.println("the number of even digits in the found sum: " + colculateNumOfEvenDigits(res));
 		
 	}
 
-	private static int sumOfNumContainOddNum(int [] a) {
+	private static int colculateSumOfNumContainOddNum(int [] a) {
 		
 		int [] arr = new int[4];
 		int sum = 0;
@@ -56,7 +56,7 @@ public class Solution69 {
 		return sum;
 	}
 	
-	private static int numOfEvenDigits(int res) {
+	private static int colculateNumOfEvenDigits(int res) {
 		
 		int quantity = 0;
 		int lastDigit = 0;

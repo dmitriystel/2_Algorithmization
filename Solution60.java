@@ -12,12 +12,12 @@ public class Solution60 {
 		
 		int n = 9;
 		
-		System.out.println(sumOfFactorialsOfEvenNumbers(n));		
+		System.out.println(calculateSumOfFactorialsOfEvenNumbers(n));		
 	}
 	
-	private static int sumOfFactorialsOfEvenNumbers(int n) {
+	private static int calculateSumOfFactorialsOfEvenNumbers(int n) {
 		
-		int res = 0;
+		int result = 0;
 		
 		for (int i = 1; i <= n; i++) {
 			int factorial = 1;
@@ -26,9 +26,9 @@ public class Solution60 {
 				for (int j = 1; j <= i; j++) {
 					factorial *= j ;
 				}				
-				res += factorial;				
+				result += factorial;				
 			}			
 		}		
-		return res;
+		return result;
 	}
 }

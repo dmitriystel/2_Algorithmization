@@ -17,12 +17,12 @@ public class Solution70 {
 		int num = rand.nextInt(1000);
 		
 		System.out.println("given number: " + num);
-		System.out.println("result: " + numberOfSubtractions(num));
+		System.out.println("result: " + colculateNumberOfSubtractions(num));
 	}
 
-	private static int numberOfSubtractions(int num) {
+	private static int colculateNumberOfSubtractions(int num) {
 		
-		int res = 0;
+		int result = 0;
 		
 		while (num > 0) { 
 			int n = num; 
@@ -38,8 +38,8 @@ public class Solution70 {
 			}
 			
 			num -= sum; 
-			res++; 		
+			result++; 		
 		}		
-		return res;
+		return result;
 	}
 }

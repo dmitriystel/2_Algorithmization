@@ -37,7 +37,7 @@ public class Solution61 {
 		
 		System.out.print("sums of three consecutively arranged array elements from " + k  + " to " + m + ": ");
 		
-		System.out.println(sumOfThreeConsecutiveElements (arr, k, m));
+		System.out.println(calculateSumOfThreeConsecutiveElements(arr, k, m));
 	}
 	
 	private static void initArray(int[] arr) {
@@ -52,13 +52,13 @@ public class Solution61 {
 			}					
 	  }	
 	
-	private static int sumOfThreeConsecutiveElements (int[] arr, int k, int m) {
+	private static int calculateSumOfThreeConsecutiveElements(int[] arr, int k, int m) {
 		
-		int res = 0; 
+		int result = 0; 
 		
 		for (int i = k; i <= m; i++ ) {
-			res += arr[i];
+			result += arr[i];
 		}		
-		return res;
+		return result;
 	}
 }

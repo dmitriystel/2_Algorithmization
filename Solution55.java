@@ -22,13 +22,12 @@ public class Solution55 {
 		System.out.println("b is " + b);
 		System.out.println("c is " + c);
 		System.out.println("d is " + d);
-		System.out.println("gcd is " + gcd(a, b, c, d));		
+		System.out.println("greatest common divisor is " + calculateGreatestCommonDivisor(a, b, c, d));		
 	}
 	
-	private static int gcd(int a, int b, int c, int d) {
-		int res = 0; 
-		int min = a; 
-		int temp = 0; 
+	private static int calculateGreatestCommonDivisor(int a, int b, int c, int d) {
+		int result = 0; 
+		int min = a;  
 		
 		int [] array = {a, b, c, d};
 		
@@ -39,12 +38,12 @@ public class Solution55 {
 		}						
 			for (int i = min; i > 0; i--) {
 				if (a % i == 0 && b % i == 0 && c % i == 0 && d % i == 0){
-					res = i;
+					result = i;
 					break;
 				}
 			}
 					
-		return res;				
+		return result;				
 	  }			
 }
 

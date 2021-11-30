@@ -58,7 +58,7 @@ public class Solution53 {
 	
 	private static void commonDenominator(int[] numerator,int[] denominator, int n) {
 		
-		int comDen = denominator[0] - 1;	// 4
+		int comDen = denominator[0] - 1;	
 		int count = 0;
 		int multiplier = 0;
 				
@@ -71,8 +71,7 @@ public class Solution53 {
 				if(comDen % denominator[i] == 0) {
 					count++;
 				}
-			}
-			
+			}			
 		}
 		
 		for (int j = 0; j < denominator.length; j++ ) {
@@ -119,7 +118,6 @@ public class Solution53 {
 					temp2 = denominator[i];
 					denominator[i] = denominator[minIndex];
 					denominator[minIndex] = temp2;												
-		}
-		
+		}		
 	}
 }
